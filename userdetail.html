@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>task</title>
+  
+  
+  
+      <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+<body>
+  <div class="login-wrap">
+  <div class="login-html">
+   <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">User Details</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab"></label>
+    
+    <div class="login-form">
+      <form class="sign-in-htm" action="./api/user/login.php" method="GET">
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="username" name="username" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="mail" class="label">Email ID</label>
+          <input id="email" name="email" type="email" class="input" data-type="email"  pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+    required>
+        </div>
+		<div class="group">
+          <label for="deg" class="label">Degree</label>
+          <input id="degree" name="degree" type="text" class="input">
+        </div>
+		<div class="group">
+          <label for="clg" class="label">College</label>
+          <input id="college" name="college" type="text" class="input">
+        </div>
+        <div class="group">
+		<div class="group">
+          <label for="age" class="label">Age</label>
+          <input id="age" name="age" type="number" class="input" placeholder="0">
+        </div>
+		
+		
+          <label for="sex" class="label">sex</label>
+       <input type = "radio"
+                 name = "radSize"
+                 id = "sizeSmall"
+                 value = "small"
+                 checked = "checked" />
+          <label for = "sizeSmall">Male</label>
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sizeMed"
+                 value = "medium" />
+          <label for = "sizeMed">Female</label>
+         
+        </div>
+		<div class="group">
+          <label for="loc" class="label">Location</label>
+          <select>
+    <option value="None selected">Please select below</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Chennai">Chennai</option>
+	<option value="Bangalore">Bangalore</option>
+	
+</select>
+        </div>
+        <div class="group">
+		
+		
+          <input type="submit" class="button" value="Done">
+		
+        </div>
+		<div class="foot-lnk">
+          <a href="index.html">Logout</a>
+        </div>
+		
+     
+       
+      </form>
+	  
+      
+    </div>
+  </div>
+</div>
+  
+  
+</body>
+</html>
+
